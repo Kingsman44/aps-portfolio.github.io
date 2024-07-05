@@ -294,4 +294,81 @@ Swiggy aims to provide users with the most efficient route and distance between 
 
 1.  **Construct the Road Network Graph:** Represent the road network as a weighted graph, where nodes represent intersections or points of interest, and edges represent road segments with associated weights.
 2.  **Perform Dijkstra's Algorithm:** Use Dijkstra's algorithm to find the shortest path between the user's location and the selected restaurant. The algorithm will explore the graph, keeping track of the shortest distance to each node, and eventually return the shortest path and distance.
-3.  **Provide the Fare:** Calculate fare 
+3.  **Provide the Fare:** Calculate fare
+
+
+## 11. Shortest Path for Multi-Parcel Delivery
+
+### Use Case:
+
+Swiggy wants to optimize the delivery routes for delivery personnel who can carry 1-2 parcels at a time to ensure timely and efficient deliveries.
+
+-   Multiple delivery addresses
+-   Capacity constraint (1-2 parcels at a time)
+-   Dynamic traffic conditions
+
+**Algorithm:**
+
+-   **Multiple Traveling Salesman Problem (mTSP):**
+    -   **Use:** Extends the classic Traveling Salesman Problem to multiple salesmen (delivery personnel), optimizing the delivery routes for each person while considering capacity constraints.
+    -   **Time Complexity:** O((N!)^M), where N is the number of locations and M is the number of delivery personnel.
+    -   **Space Complexity:** O(N*M)
+
+**Approach:**
+
+1.  **Graph Representation:** Model the delivery area as a weighted graph with nodes (delivery addresses) and edges (distances between addresses).
+2.  **Capacity Constraints:** Include constraints that limit each delivery person to carry a maximum of 2 parcels at a time.
+3.  **Route Optimization:** Use a heuristic or approximation algorithm to solve the mTSP, finding the optimal routes for each delivery person.
+
+### Detailed Steps:
+
+1.  **Data Collection:**
+    
+    -   Collect data on delivery addresses, distances between them, and current traffic conditions.
+    -   Include information about the capacity of each delivery person (1-2 parcels).
+2.  **Graph Representation:**
+    
+    -   Represent the delivery area as a weighted graph G(V, E) where V is the set of delivery locations and E is the set of edges representing distances between locations.
+3.  **Initialization:**
+    
+    -   Initialize the mTSP problem with the number of delivery personnel (salesmen) and the capacity constraint (1-2 parcels).
+4.  **Heuristic Solution:**
+    
+    -   Use a heuristic approach, such as the Genetic Algorithm or Ant Colony Optimization, to find near-optimal solutions for the mTSP:
+        -   **Genetic Algorithm:**
+            -   **Encoding:** Represent each potential solution (route) as a chromosome.
+            -   **Fitness Function:** Define a fitness function that evaluates the total travel distance while respecting capacity constraints.
+            -   **Selection, Crossover, Mutation:** Apply genetic operators to evolve the population towards better solutions.
+        -   **Ant Colony Optimization:**
+            -   **Pheromone Update:** Use pheromone trails to guide the search for optimal routes.
+            -   **Heuristic Information:** Incorporate heuristic information (e.g., distance, traffic conditions) to influence the route construction.
+5.  **Solution Refinement:**
+    
+    -   Refine the solution by iterating through the heuristic algorithm until convergence or a satisfactory solution is found.
+    -   Ensure that each delivery person’s route does not exceed the capacity constraint of carrying 1-2 parcels at a time.
+6.  **Real-time Adjustments:**
+    
+    -   Continuously update the routes based on real-time traffic data and new incoming orders.
+    -   Use Dijkstra’s algorithm or A* search to make real-time adjustments to the routes for efficiency.
+7.  **Implementation:**
+    
+    -   Deploy the optimized routes to the delivery personnel via a mobile application.
+    -   Provide real-time navigation and updates to ensure timely deliveries.
+
+## 12. Sorting and Filtering Food Items
+
+### Use Case:
+
+Swiggy aims to provide users with the ability to sort and filter food items based on various criteria such as price, rating, delivery time, and dietary preferences. This enhances the user experience by allowing customers to find items that meet their specific needs quickly.
+
+-   Vast and diverse food menu
+-   Multiple sorting and filtering criteria
+-   Real-time performance
+
+**Algorithm:**
+
+-   **Merge Sort:**
+    -   **Use:** Efficiently sorts large lists based on various criteria.
+    -   **Time Complexity:** O(N log N)
+    -   **Space Complexity:** O(N)
+
