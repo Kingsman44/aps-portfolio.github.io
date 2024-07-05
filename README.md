@@ -364,7 +364,7 @@ Swiggy aims to segment customers based on their ordering behavior, preferences, 
 1.  **Feature Extraction:** Collect data on customer behavior, preferences, and demographics.
 2.  **Clustering:** Use K-Means to segment customers into clusters.
 
-###  12. Data Compression in Swiggy's Infrastructure using Huffman Coding
+##  13. Data Compression in Swiggy's Infrastructure using Huffman Coding
 
 **Use Case:** Swiggy handles vast amounts of data generated from customer orders, delivery information, restaurant menus, and user interactions. Efficient data compression using **Huffman Coding** can significantly optimize storage systems, file formats, and communication protocols. By encoding data with variable-length codes based on frequency distributions, Swiggy can reduce storage requirements, minimize bandwidth usage, and improve data transfer speeds, leading to faster access times and reduced network congestion.
 
@@ -377,7 +377,7 @@ Swiggy aims to segment customers based on their ordering behavior, preferences, 
     -   **Space Complexity:** O(n) for storing the Huffman tree and encoded data
 
 
-### 13.  Real-Time Order Tracking and Statistics using Fenwick Trees
+## 14.  Real-Time Order Tracking and Statistics using Fenwick Trees
 
 **Use Case:** Swiggy's delivery system handles a high volume of orders that require real-time tracking and statistical analysis, such as monitoring the number of deliveries, calculating average delivery times, and analyzing peak order periods. Fenwick Trees (or Binary Indexed Trees) can be employed for efficient cumulative frequency table management, allowing Swiggy to quickly update and query order statistics in real-time.
 
@@ -390,7 +390,7 @@ Swiggy aims to segment customers based on their ordering behavior, preferences, 
     -   **Space Complexity:** O(n) for storing the tree.
 
 
-## 14. Order Dispatch Optimization using Max-Heap (Priority Queue)
+## 15. Order Dispatch Optimization using Max-Heap (Priority Queue)
 
 ## Use Case:
 
@@ -404,7 +404,7 @@ Swiggy needs to efficiently dispatch incoming orders to the available delivery e
 -   **Space Complexity:** O(n), where n is the number of elements in the heap.
 
 
-## 15. Restaurant Rating and Sorting using Red-Black Trees
+## 16. Restaurant Rating and Sorting using Red-Black Trees
 
 ## Use Case:
 
@@ -424,7 +424,7 @@ Swiggy needs to efficiently store and sort restaurants based on their ratings to
 3.  **Sorted Restaurant List:** Traverse the red-black tree in-order to obtain a sorted list of restaurants based on their ratings.
 4.  **Filtering and Searching:** Use the red-black tree's search functionality to efficiently filter and search for restaurants based on their ratings.
 
-## 16. Delivery Time Estimates using Segment Trees for Range Queries
+## 17. Delivery Time Estimates using Segment Trees for Range Queries
 
 ## Use Case:
 
@@ -445,7 +445,7 @@ Swiggy needs to provide accurate delivery time estimates to its customers based 
 4.  **Continuous Monitoring:** Continuously monitor and update the delivery time estimates in the segment tree based on real-time data to ensure accurate and up-to-date information.
 
 
-## 17. Priority Queue for Call Wait Time Management and Swiggy One Membership
+## 18. Priority Queue for Call Wait Time Management and Swiggy One Membership
 
 ## Use Case:
 
