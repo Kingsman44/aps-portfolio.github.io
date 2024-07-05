@@ -127,28 +127,7 @@ Swiggy aims to provide users with personalized and relevant food recommendations
 
 By leveraging graph-based methods, Swiggy can enhance its food recommendations by capturing the complex relationships between food items and providing more relevant and personalized suggestions to users.
 
-## 4. Contextual Bandits for Ads Recommendations
-
-### Use Case:
-Swiggy's advertising platform aims to provide users with relevant and engaging advertisements based on their context and preferences.
-
-**Algorithms:**
-
-#### 1. Contextual Multi-Armed Bandits:
-- **Purpose:** Dynamically optimize the selection of advertisements shown to users based on their context and past interactions.
-- **Application:** Model the ad recommendation problem as a contextual multi-armed bandit, where each ad is an "arm" and the user's context (e.g., location, time of day, browsing history) is the "context".
-- **Time Complexity:** O(K * log(t)), where K is the number of ads (arms) and t is the number of iterations.
-- **Space Complexity:** O(K), where K is the number of ads (arms).
-
-**Approach:**
-1. Represent each user's context as a feature vector, capturing relevant information about the user's preferences and behavior.
-2. Model the ad recommendation problem as a contextual multi-armed bandit, where each ad is an "arm" and the user's context is the "context".
-3. Use a contextual bandit algorithm, such as LinUCB or Thompson Sampling, to dynamically select the most relevant ads to display to the user based on their context and past interactions.
-4. Continuously update the bandit's model as new user interactions and feedback are observed, allowing the system to adapt and improve its recommendations over time.
-
-By employing contextual multi-armed bandits, Swiggy's advertising platform can provide users with more relevant and engaging advertisements, leading to increased user engagement and ad revenue.
-
-## 5. Identifying Fraud Rings Using Domain-Aware Weighted Community Detection
+## 4. Identifying Fraud Rings Using Domain-Aware Weighted Community Detection
 
 ### Use Case:
 Swiggy needs to detect and prevent fraudulent activities, such as fake accounts, coordinated attacks, and collusion, to ensure the integrity of its platform.
@@ -171,7 +150,7 @@ Swiggy needs to detect and prevent fraudulent activities, such as fake accounts,
 
 By leveraging domain-aware weighted community detection, Swiggy can effectively identify and disrupt fraud rings, improving the overall integrity and trustworthiness of its platform.
 
-## 6. Assignment & Routing Optimization for Swiggy Instamart Delivery
+## 5. Assignment & Routing Optimization for Swiggy Instamart Delivery
 
 ### Use Case:
 Swiggy's Instamart service needs to efficiently assign delivery executives to incoming orders and optimize their routes to ensure timely and cost-effective deliveries.
@@ -199,34 +178,7 @@ Swiggy's Instamart service needs to efficiently assign delivery executives to in
 
 By combining bipartite matching for assignment and VRP for routing, Swiggy can optimize the Instamart delivery operations, ensuring timely and cost-effective deliveries to customers.
 
-## 7. Predicting Food Delivery Time at Cart
-
-### Use Case:
-Swiggy needs to provide customers with accurate estimates of food delivery times at the cart stage to set appropriate expectations and improve the overall user experience.
-
-**Algorithms:**
-
-#### 1. Time Series Forecasting:
-- **Purpose:** Predict the food delivery time for a given order based on historical data and real-time factors.
-- **Application:** Use time series forecasting techniques, such as ARIMA or Prophet, to model the delivery time as a function of various features (e.g., restaurant location, order details, traffic conditions).
-- **Time Complexity:** Depends on the specific time series model used, but often O(n log n) or O(n^2), where n is the number of data points.
-- **Space Complexity:** O(n), where n is the number of data points.
-
-#### 2. Queueing Theory:
-- **Purpose:** Estimate the expected waiting time and delivery time for an order based on the current state of the system (e.g., restaurant processing capacity, delivery executive availability).
-- **Application:** Model the food delivery process as a queueing system and use queueing theory to calculate the expected delivery time for a given order.
-- **Time Complexity:** Depends on the specific queueing model used, but often involves solving a system of equations.
-- **Space Complexity:** O(n), where n is the number of system parameters.
-
-**Approach:**
-1. Collect historical data on food delivery times, including order details, restaurant information, and real-time factors (e.g., traffic conditions, weather).
-2. Use time series forecasting techniques to model the delivery time as a function of various features and make predictions for new orders.
-3. Complement the time series forecasting model with a queueing theory-based approach to estimate the expected waiting time and delivery time based on the current state of the system.
-4. Combine the predictions from both models to provide customers with accurate and reliable delivery time estimates at the cart stage.
-
-By leveraging time series forecasting and queueing theory, Swiggy can improve the accuracy of its delivery time estimates, leading to better customer experience and satisfaction.
-
-## 8. Personalizing Swiggy POP Recommendations
+## 6. Personalizing Swiggy POP Recommendations
 
 ### Use Case:
 Swiggy's POP service aims to provide users with a curated and personalized menu of single-serve, quick-checkout meals. To achieve this, Swiggy needs to efficiently generate a list of eligible food items and then rank them based on user preferences and other factors.
@@ -245,7 +197,7 @@ Swiggy's POP service aims to provide users with a curated and personalized menu 
 - **Time Complexity (Search):** O(k), where k is the number of food items containing the keyword.
 - **Space Complexity:** O(N*L), where N is the number of food items and L is the average length of a food item.
 
-## 9. Finding All Restaurants Near Me Using Geospatial Data Structures
+## 7. Finding All Restaurants Near Me Using Geospatial Data Structures
 
 ### Use Case: 
 Swiggy aims to provide users with a list of nearby restaurants based on their current location. To achieve this, Swiggy needs to efficiently find all restaurants within a given radius or distance from the user's location.
@@ -275,7 +227,7 @@ Swiggy aims to provide users with a list of nearby restaurants based on their cu
 
 <img width="461" alt="image" src="https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/2882c7bf-8a62-48bc-9e1d-5e954128d8de">
 
-## 10. Finding the Delivery Charges
+## 8. Finding the Delivery Charges
 
 ## Use Case:
 
@@ -297,7 +249,7 @@ Swiggy aims to provide users with the most efficient route and distance between 
 3.  **Provide the Fare:** Calculate fare
 
 
-## 11. Shortest Path for Multi-Parcel Delivery
+## 9. Shortest Path for Multi-Parcel Delivery
 
 ### Use Case:
 
@@ -355,7 +307,7 @@ Swiggy wants to optimize the delivery routes for delivery personnel who can carr
     -   Deploy the optimized routes to the delivery personnel via a mobile application.
     -   Provide real-time navigation and updates to ensure timely deliveries.
 
-## 12. Sorting and Filtering Food Items
+## 10. Sorting and Filtering Food Items
 
 ### Use Case:
 
@@ -373,7 +325,7 @@ Swiggy aims to provide users with the ability to sort and filter food items base
     -   **Space Complexity:** O(N)
 
 
-## 13. Real-Time Order Tracking
+## 11. Real-Time Order Tracking
 
 ### Use Case:
 
@@ -381,7 +333,7 @@ Swiggy aims to provide customers with real-time tracking of their food orders, s
 
 **Algorithms:**
 
--   __A_ Search Algorithm:_*
+- **A* Search Algorithm: **
     -   **Purpose:** Find the shortest path in a graph with real-time updates for dynamic conditions like traffic.
     -   **Application:** Calculate the optimal route for delivery executives in real-time.
     -   **Time Complexity:** O(E), where E is the number of edges.
@@ -393,7 +345,7 @@ Swiggy aims to provide customers with real-time tracking of their food orders, s
 2.  **Real-Time Updates:** Continuously update the graph with real-time traffic data.
 3.  **Pathfinding:** Use the A* algorithm to find the shortest path for delivery executives.
 
-## 14. Customer Segmentation
+## 12. Customer Segmentation
 
 ### Use Case:
 
@@ -412,4 +364,98 @@ Swiggy aims to segment customers based on their ordering behavior, preferences, 
 1.  **Feature Extraction:** Collect data on customer behavior, preferences, and demographics.
 2.  **Clustering:** Use K-Means to segment customers into clusters.
 
+###  12. Data Compression in Swiggy's Infrastructure using Huffman Coding
 
+**Use Case:** Swiggy handles vast amounts of data generated from customer orders, delivery information, restaurant menus, and user interactions. Efficient data compression using **Huffman Coding** can significantly optimize storage systems, file formats, and communication protocols. By encoding data with variable-length codes based on frequency distributions, Swiggy can reduce storage requirements, minimize bandwidth usage, and improve data transfer speeds, leading to faster access times and reduced network congestion.
+
+**Challenges:** Efficient data compression and storage.
+
+**Algorithms, Design Techniques, Performance Analysis:**
+
+-   **Huffman Coding:** Greedy approach, Variable-length encoding
+    -   **Time Complexity:** O(n log n) for building the Huffman tree, where n is the number of symbols
+    -   **Space Complexity:** O(n) for storing the Huffman tree and encoded data
+
+
+### 13.  Real-Time Order Tracking and Statistics using Fenwick Trees
+
+**Use Case:** Swiggy's delivery system handles a high volume of orders that require real-time tracking and statistical analysis, such as monitoring the number of deliveries, calculating average delivery times, and analyzing peak order periods. Fenwick Trees (or Binary Indexed Trees) can be employed for efficient cumulative frequency table management, allowing Swiggy to quickly update and query order statistics in real-time.
+
+**Challenges:** Efficient real-time updating and querying of cumulative data.
+
+**Algorithms, Design Techniques, Performance Analysis:**
+
+-   **Fenwick Tree (Binary Indexed Tree):** Data structure for cumulative frequency tables.
+    -   **Time Complexity:** O(log n) for both updates and prefix sum queries.
+    -   **Space Complexity:** O(n) for storing the tree.
+
+
+## 14. Order Dispatch Optimization using Max-Heap (Priority Queue)
+
+## Use Case:
+
+Swiggy needs to efficiently dispatch incoming orders to the available delivery executives to ensure timely delivery and customer satisfaction. To achieve this, Swiggy can use a max-heap (priority queue) data structure to prioritize the orders based on various factors, such as delivery time, customer priority, and order value.**Algorithms:**
+
+## 1. Max-Heap (Priority Queue):
+
+-   **Purpose:** Maintain a collection of elements where the root element is the largest (or highest priority) among all the elements.
+-   **Application:** Store the incoming orders in a max-heap, where the priority of each order is determined by a combination of factors, such as delivery time, customer priority, and order value.
+-   **Time Complexity:** O(log n) for insertion, deletion, and retrieval of the maximum (highest priority) element, where n is the number of elements in the heap.
+-   **Space Complexity:** O(n), where n is the number of elements in the heap.
+
+
+## 15. Restaurant Rating and Sorting using Red-Black Trees
+
+## Use Case:
+
+Swiggy needs to efficiently store and sort restaurants based on their ratings to provide users with a ranked list of restaurants and to enable features like filtering and searching by rating.**Algorithms:**
+
+## 1. Red-Black Trees:
+
+-   **Purpose:** Maintain a sorted collection of elements while providing efficient insertion, deletion, and search operations.
+-   **Application:** Store the restaurants in a red-black tree, where each node represents a restaurant and the key is the restaurant's rating.
+-   **Time Complexity:** O(log n) for insertion, deletion, and search operations, where n is the number of elements in the tree.
+-   **Space Complexity:** O(n), where n is the number of elements in the tree.
+
+**Approach:**
+
+1.  **Restaurant Storage:** Store each restaurant in a red-black tree, using the restaurant's rating as the key.
+2.  **Rating Updates:** When a restaurant's rating changes, update the corresponding node in the red-black tree.
+3.  **Sorted Restaurant List:** Traverse the red-black tree in-order to obtain a sorted list of restaurants based on their ratings.
+4.  **Filtering and Searching:** Use the red-black tree's search functionality to efficiently filter and search for restaurants based on their ratings.
+
+## 16. Delivery Time Estimates using Segment Trees for Range Queries
+
+## Use Case:
+
+Swiggy needs to provide accurate delivery time estimates to its customers based on real-time data, such as order volume, restaurant processing times, and delivery executive availability. To efficiently handle range queries and updates related to delivery time estimates, Swiggy can use segment trees.**Algorithms:**
+
+## 1. Segment Trees:
+
+-   **Purpose:** Efficiently perform range queries and updates on an array or a collection of elements.
+-   **Application:** Maintain a segment tree data structure that stores delivery time estimates for different time intervals (e.g., 15-minute slots) across multiple restaurants and delivery zones.
+-   **Time Complexity:** O(log n) for range queries and updates, where n is the number of elements in the segment tree.
+-   **Space Complexity:** O(n), where n is the number of elements in the segment tree.
+
+**Approach:**
+
+1.  **Segment Tree Construction:** Build a segment tree that stores delivery time estimates for different time intervals across multiple restaurants and delivery zones.
+2.  **Real-Time Updates:** Whenever there are changes in order volume, restaurant processing times, or delivery executive availability, update the corresponding delivery time estimates in the segment tree.
+3.  **Range Queries:** When a customer requests a delivery time estimate, perform a range query on the segment tree to retrieve the estimated delivery time for the selected restaurant and delivery zone.
+4.  **Continuous Monitoring:** Continuously monitor and update the delivery time estimates in the segment tree based on real-time data to ensure accurate and up-to-date information.
+
+
+## 17. Priority Queue for Call Wait Time Management and Swiggy One Membership
+
+## Use Case:
+
+Swiggy aims to provide efficient customer support through its call center. To ensure that customers with urgent issues or high priority are served first, Swiggy can use a priority queue data structure. Additionally, Swiggy One members, who have a premium subscription, should be given higher priority in the queue.
+
+**Algorithms:**
+
+## 1. Priority Queue:
+
+-   **Purpose:** Maintain a collection of elements where the root element is the highest priority among all the elements.
+-   **Application:** Store the incoming customer calls in a priority queue, where the priority of each call is determined by factors such as call wait time, customer priority, and Swiggy One membership status.
+-   **Time Complexity:** O(log n) for insertion, deletion, and retrieval of the maximum (highest priority) element, where n is the number of elements in the queue.
+-   **Space Complexity:** O(n), where n is the number of elements in the queue.
