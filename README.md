@@ -1,5 +1,5 @@
 
-# Food Delivery (Swiggy)
+# Swiggy Portfolio
 
 <dl>
 <dt>Course Name</dt>
@@ -11,7 +11,7 @@
 <dt>University</dt>
 <dd>KLE Technological University, Hubballi-31</dd>
 <dt>Portfolio Topic/Domain</dt>
-<dd>Google</dd>
+<dd>Swiggy</dd>
 </dl>
 
 * * *
@@ -25,9 +25,8 @@ This page hosts:
 
 1. Introduction
 2. Objectives
-3. Business Use Cases and Mapping Algorithms
-4. Use case and efficiency overview
-5. Learnings and key takeaways
+3. Business Use Cases
+4. Learnings and key takeaways
 
 # Business Use Cases:
 
