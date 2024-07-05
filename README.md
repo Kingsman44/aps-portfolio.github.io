@@ -275,3 +275,23 @@ Swiggy aims to provide users with a list of nearby restaurants based on their cu
 
 <img width="461" alt="image" src="https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/2882c7bf-8a62-48bc-9e1d-5e954128d8de">
 
+## 10. Finding the Delivery Charges
+
+## Use Case:
+
+Swiggy aims to provide users with the most efficient route and distance between their current location and a selected restaurant to calculate fare. To achieve this, Swiggy can leverage Dijkstra's algorithm to find the shortest path and distance between the user's location and the restaurant.
+
+**Algorithms:**
+
+## 1. Dijkstra's Algorithm:
+
+-   **Purpose:** Find the shortest path between two nodes in a weighted graph.
+-   **Application:** Represent the road network as a weighted graph, where nodes represent intersections or points of interest, and edges represent road segments with associated weights.
+-   **Time Complexity:** O((E + V) log V), where E is the number of edges and V is the number of vertices in the graph.
+-   **Space Complexity:** O(V), where V is the number of vertices in the graph.
+
+**Approach:**
+
+1.  **Construct the Road Network Graph:** Represent the road network as a weighted graph, where nodes represent intersections or points of interest, and edges represent road segments with associated weights.
+2.  **Perform Dijkstra's Algorithm:** Use Dijkstra's algorithm to find the shortest path between the user's location and the selected restaurant. The algorithm will explore the graph, keeping track of the shortest distance to each node, and eventually return the shortest path and distance.
+3.  **Provide the Fare:** Calculate fare 
