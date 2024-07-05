@@ -372,3 +372,44 @@ Swiggy aims to provide users with the ability to sort and filter food items base
     -   **Time Complexity:** O(N log N)
     -   **Space Complexity:** O(N)
 
+
+## 13. Real-Time Order Tracking
+
+### Use Case:
+
+Swiggy aims to provide customers with real-time tracking of their food orders, showing the exact location of the delivery executive and the estimated time of arrival.
+
+**Algorithms:**
+
+-   __A_ Search Algorithm:_*
+    -   **Purpose:** Find the shortest path in a graph with real-time updates for dynamic conditions like traffic.
+    -   **Application:** Calculate the optimal route for delivery executives in real-time.
+    -   **Time Complexity:** O(E), where E is the number of edges.
+    -   **Space Complexity:** O(V), where V is the number of vertices.
+
+**Approach:**
+
+1.  **Graph Representation:** Model the delivery area as a weighted graph.
+2.  **Real-Time Updates:** Continuously update the graph with real-time traffic data.
+3.  **Pathfinding:** Use the A* algorithm to find the shortest path for delivery executives.
+
+## 14. Customer Segmentation
+
+### Use Case:
+
+Swiggy aims to segment customers based on their ordering behavior, preferences, and demographics for targeted marketing and personalized recommendations.
+
+**Algorithms:**
+
+-   **K-Means Clustering:**
+    -   **Purpose:** Group customers into clusters based on their features.
+    -   **Application:** Segment customers for personalized marketing.
+    -   **Time Complexity:** O(n * k * t), where n is the number of data points, k is the number of clusters, and t is the number of iterations.
+    -   **Space Complexity:** O(n * k).
+
+**Approach:**
+
+1.  **Feature Extraction:** Collect data on customer behavior, preferences, and demographics.
+2.  **Clustering:** Use K-Means to segment customers into clusters.
+
+
