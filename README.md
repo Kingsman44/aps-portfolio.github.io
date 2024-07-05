@@ -110,14 +110,14 @@ Swiggy aims to provide users with personalized and relevant food recommendations
 #### 1. Graph Embedding (Node2Vec):
 - **Purpose:** Learn low-dimensional vector representations of nodes (food items) in a graph, capturing the structural and semantic relationships between them.
 - **Application:** Construct a graph representing the relationships between food items (e.g., co-occurrence, substitutes, complements) and use Node2Vec to learn embeddings for each item.
-- **Time Complexity:** O(d * |V| * |E|), where d is the dimensionality of the embeddings, |V| is the number of nodes, and |E| is the number of edges.
-- **Space Complexity:** O(|V| + |E|), where |V| is the number of nodes and |E| is the number of edges.
+- **Time Complexity:** O(d * V * E), where d is the dimensionality of the embeddings, V is the number of nodes, and E is the number of edges.
+- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
 
 #### 2. Random Walk-based Recommendation:
 - **Purpose:** Leverage the learned graph embeddings to generate personalized food recommendations for users.
 - **Application:** Perform random walks starting from the user's preferred food items to explore the graph and identify relevant recommendations.
-- **Time Complexity:** O(k * |V|), where k is the number of random walks and |V| is the number of nodes.
-- **Space Complexity:** O(|V| + |E|), where |V| is the number of nodes and |E| is the number of edges.
+- **Time Complexity:** O(k * V), where k is the number of random walks and V is the number of nodes.
+- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
 
 **Approach:**
 1. Construct a food item graph based on various relationships (e.g., co-occurrence, substitutes, complements).
@@ -158,8 +158,8 @@ Swiggy needs to detect and prevent fraudulent activities, such as fake accounts,
 #### 1. Domain-Aware Weighted Community Detection:
 - **Purpose:** Identify groups of connected entities (e.g., users, devices, accounts) that exhibit fraudulent behavior.
 - **Application:** Construct a weighted graph representing the relationships between entities (e.g., based on shared attributes, co-occurrences, or interactions) and apply community detection algorithms to identify densely connected subgroups that may represent fraud rings.
-- **Time Complexity:** O(|V| + |E|), where |V| is the number of nodes and |E| is the number of edges in the graph.
-- **Space Complexity:** O(|V| + |E|), where |V| is the number of nodes and |E| is the number of edges in the graph.
+- **Time Complexity:** O(V + E), where V is the number of nodes and E is the number of edges in the graph.
+- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges in the graph.
 
 **Approach:**
 1. Collect and preprocess data from various sources (e.g., user accounts, device information, transaction logs) to construct a weighted graph representing the relationships between entities.
@@ -181,8 +181,8 @@ Swiggy's Instamart service needs to efficiently assign delivery executives to in
 #### 1. Bipartite Matching for Assignment:
 - **Purpose:** Assign delivery executives to incoming orders in a way that maximizes the overall efficiency and minimizes delivery times.
 - **Application:** Model the assignment problem as a bipartite matching problem, where delivery executives and orders are the two sets of nodes, and the edges represent the feasibility and cost of an assignment.
-- **Time Complexity:** O(√(|V|) * |E|), where |V| is the number of nodes (delivery executives and orders) and |E| is the number of edges (feasible assignments).
-- **Space Complexity:** O(|V| + |E|), where |V| is the number of nodes and |E| is the number of edges.
+- **Time Complexity:** O(√(V) * E), where V is the number of nodes (delivery executives and orders) and E is the number of edges (feasible assignments).
+- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
 
 #### 2. Vehicle Routing Problem (VRP) for Routing:
 - **Purpose:** Optimize the delivery routes for each assigned delivery executive to minimize the total distance traveled, delivery time, and other relevant factors.
@@ -245,8 +245,33 @@ Swiggy's POP service aims to provide users with a curated and personalized menu 
 - **Time Complexity (Search):** O(k), where k is the number of food items containing the keyword.
 - **Space Complexity:** O(N*L), where N is the number of food items and L is the average length of a food item.
 
+## 9. Finding All Restaurants Near Me Using Geospatial Data Structures
+
+### Use Case: 
+Swiggy aims to provide users with a list of nearby restaurants based on their current location. To achieve this, Swiggy needs to efficiently find all restaurants within a given radius or distance from the user's location.
+
+**Algorithms:**
+
+## 1. Geospatial Data Structures:
+
+-   **Purpose:** Store and query geospatial data efficiently, such as restaurant locations.
+-   **Application:** Use a geospatial data structure like a k-d tree or a quadtree to store the restaurant locations and perform range queries to find all restaurants within a given radius.
+-   **Time Complexity:** O(log n) for insertion and O(n) for range queries, where n is the number of restaurants.
+-   **Space Complexity:** O(n), where n is the number of restaurants.
+
+## 2. Rectangular range query:
+
+-   **Purpose:** Find all restaurants within a given radius or distance from the user's location.
+-   **Application:** Use the geospatial data structure to perform range queries, which return all restaurants within the specified distance or radius.
+-   **Time Complexity:** O(√n+k) for range queries, where n is the number of restaurants.
+-   **Space Complexity:** O(n), where n is the number of restaurants.
+
 **Approach:**
-1. **Eligibility:** Use the Trie data structure to generate a list of eligible food items based on the user's query.
-2. **Personalization:** Rank the eligible food items using the inverted index and other personalization features, such as user preferences, item popularity, and restaurant choices.
-3. **Serviceability:** Apply real-time constraints (e.g., dish availability, restaurant open status) to the ranked list of food items to create the final POP menu.
-    
+
+1.  **Data Collection:** Collect the locations of all restaurants in the Swiggy database.
+2.  **Geospatial Data Structure:** Construct a geospatial data structure K-D Tree to store the restaurant locations.
+3.  **Range Query:** Perform a range query on the geospatial data structure to find all restaurants within a given radius or distance from the user's location.
+4.  **Result Filtering:** Filter the results to include only restaurants that are open and available for delivery.
+
+<img width="461" alt="image" src="https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/2882c7bf-8a62-48bc-9e1d-5e954128d8de">
+
