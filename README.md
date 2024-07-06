@@ -131,13 +131,13 @@ Algorithms:
 
 **Algorithms:**
 
-#### 1. Graph Embedding (Node2Vec):
+### 1. Graph Embedding (Node2Vec):
 - **Purpose:** Learn low-dimensional vector representations of nodes (food items) in a graph, capturing the structural and semantic relationships between them.
 - **Application:** Construct a graph representing the relationships between food items (e.g., co-occurrence, substitutes, complements) and use Node2Vec to learn embeddings for each item.
 - **Time Complexity:** O(d * V * E), where d is the dimensionality of the embeddings, V is the number of nodes, and E is the number of edges.
 - **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
 
-#### 2. Random Walk-based Recommendation:
+### 2. Random Walk-based Recommendation:
 - **Purpose:** Leverage the learned graph embeddings to generate personalized food recommendations for users.
 - **Application:** Perform random walks starting from the user's preferred food items to explore the graph and identify relevant recommendations.
 - **Time Complexity:** O(k * V), where k is the number of random walks and V is the number of nodes.
@@ -161,7 +161,7 @@ By leveraging graph-based methods, Swiggy can enhance its food recommendations b
 
 **Algorithms:**
 
-#### 1. Domain-Aware Weighted Community Detection:
+### 1. Domain-Aware Weighted Community Detection:
 - **Purpose:** Identify groups of connected entities (e.g., users, devices, accounts) that exhibit fraudulent behavior.
 - **Application:** Construct a weighted graph representing the relationships between entities (e.g., based on shared attributes, co-occurrences, or interactions) and apply community detection algorithms to identify densely connected subgroups that may represent fraud rings.
 - **Time Complexity:** O(V + E), where V is the number of nodes and E is the number of edges in the graph.
@@ -185,13 +185,13 @@ By leveraging graph-based methods, Swiggy can enhance its food recommendations b
 
 **Algorithms:**
 
-#### 1. Bipartite Matching for Assignment:
+### 1. Bipartite Matching for Assignment:
 - **Purpose:** Assign delivery executives to incoming orders in a way that maximizes the overall efficiency and minimizes delivery times.
 - **Application:** Model the assignment problem as a bipartite matching problem, where delivery executives and orders are the two sets of nodes, and the edges represent the feasibility and cost of an assignment.
 - **Time Complexity:** O(√(V) * E), where V is the number of nodes (delivery executives and orders) and E is the number of edges (feasible assignments).
 - **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
 
-#### 2. Vehicle Routing Problem (VRP) for Routing:
+### 2. Vehicle Routing Problem (VRP) for Routing:
 - **Purpose:** Optimize the delivery routes for each assigned delivery executive to minimize the total distance traveled, delivery time, and other relevant factors.
 - **Application:** Formulate the routing problem as a VRP and solve it using algorithms like Genetic Algorithms or Simulated Annealing.
 - **Time Complexity:** Depends on the specific VRP algorithm used, but can range from O(n^2 * 2^n) to O(n^3), where n is the number of orders.
@@ -217,13 +217,13 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
-#### 1. Trie (Prefix Tree) for Eligibility:
+### 1. Trie (Prefix Tree) for Eligibility:
 - **Purpose:** Efficiently find all food items starting with a given prefix, ideal for handling diverse user queries (typos, abbreviations, etc.).
 - **Application:** Build a Trie data structure to store all the food items in Swiggy's POP catalog. When a user starts typing a prefix, traverse the Trie to generate a list of eligible food items.
 - **Time Complexity (Search):** O(L), where L is the length of the user's query.
 - **Space Complexity:** O(N*L), where N is the number of food items and L is the average length of a food item.
 
-#### 2. Inverted Index for Personalization:
+### 2. Inverted Index for Personalization:
 - **Purpose:** Quickly retrieve all food items containing a specific keyword, ideal for broader searches and personalization.
 - **Application:** Create an inverted index that maps keywords to the food items they appear in. Use this index to rank the eligible food items based on their relevance to the user's preferences and other factors.
 - **Time Complexity (Search):** O(k), where k is the number of food items containing the keyword.
@@ -239,14 +239,14 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
-## 1. Geospatial Data Structures:
+### 1. Geospatial Data Structures:
 
 -   **Purpose:** Store and query geospatial data efficiently, such as restaurant locations.
 -   **Application:** Use a geospatial data structure like a k-d tree or a quadtree to store the restaurant locations and perform range queries to find all restaurants within a given radius.
 -   **Time Complexity:** O(log n) for insertion and O(n) for range queries, where n is the number of restaurants.
 -   **Space Complexity:** O(n), where n is the number of restaurants.
 
-## 2. Rectangular range query:
+### 2. Rectangular range query:
 
 -   **Purpose:** Find all restaurants within a given radius or distance from the user's location.
 -   **Application:** Use the geospatial data structure to perform range queries, which return all restaurants within the specified distance or radius.
@@ -271,7 +271,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 **Market Benefits:** Accurate and transparent delivery charges are essential for maintaining customer trust and satisfaction. By providing fair pricing, Swiggy can attract and retain customers, leading to increased order volume and revenue. Additionally, fair compensation for delivery partners based on accurate distance calculations can improve their satisfaction and motivation, contributing to a more reliable and efficient delivery service.
 **Algorithms:**
 
-## 1. Dijkstra's Algorithm:
+### 1. Dijkstra's Algorithm:
 
 -   **Purpose:** Find the shortest path between two nodes in a weighted graph.
 -   **Application:** Represent the road network as a weighted graph, where nodes represent intersections or points of interest, and edges represent road segments with associated weights.
