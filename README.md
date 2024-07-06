@@ -446,7 +446,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
-## 1. Max-Heap (Priority Queue):
+### 1. Max-Heap (Priority Queue):
 
 -   **Purpose:** Maintain a collection of elements where the root element is the largest (or highest priority) among all the elements.
 -   **Application:** Store the incoming orders in a max-heap, where the priority of each order is determined by a combination of factors, such as delivery time, customer priority, and order value.
@@ -465,7 +465,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
-## 1. Red-Black Trees:
+### 1. Red-Black Trees:
 
 -   **Purpose:** Maintain a sorted collection of elements while providing efficient insertion, deletion, and search operations.
 -   **Application:** Store the restaurants in a red-black tree, where each node represents a restaurant and the key is the restaurant's rating.
@@ -489,7 +489,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
-## 1. Segment Trees:
+### 1. Segment Trees:
 
 -   **Purpose:** Efficiently perform range queries and updates on an array or a collection of elements.
 -   **Application:** Maintain a segment tree data structure that stores delivery time estimates for different time intervals (e.g., 15-minute slots) across multiple restaurants and delivery zones.
@@ -514,7 +514,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
-## 1. Priority Queue:
+### 1. Priority Queue:
 
 -   **Purpose:** Maintain a collection of elements where the root element is the highest priority among all the elements.
 -   **Application:** Store the incoming customer calls in a priority queue, where the priority of each call is determined by factors such as call wait time, customer priority, and Swiggy One membership status.
