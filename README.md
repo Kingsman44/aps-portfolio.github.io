@@ -47,6 +47,20 @@ By showcasing the diverse applications of algorithms within Swiggy's ecosystem, 
 
 [3] GeeksforGeeks. "Algorithms." [Online]. Available: [https://www.geeksforgeeks.org/fundamentals-of-algorithms/](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
 
+# 2. Objectives
+
+The primary objectives of this portfolio are to:
+
+1.  Illustrate the practical applications of fundamental algorithmic problem-solving techniques, such as graph theory, sorting, searching, and data compression, within the context of the Swiggy food delivery platform.
+    
+2.  Demonstrate how these techniques can be utilized to address real-world challenges faced by Swiggy, such as optimizing search functionality, personalizing recommendations, detecting fraudulent activities, and enhancing delivery efficiency.
+    
+3.  Evaluate the effectiveness of various algorithms and data structures in addressing these challenges, considering factors like time complexity, space complexity, and overall performance.
+    
+4.  Quantify the potential impact of algorithmic optimizations on key performance indicators, including customer satisfaction, order fulfillment speed, fraud detection rates, and operational costs.
+    
+5. Highlight the importance of continuous innovation and adaptation in algorithmic problem-solving to meet the evolving needs of the food delivery industry and maintain a competitive advantage.
+
 # 3. Business Use Cases:
 
 ## 1. Live Search Completion or suggestion in Swiggy App
@@ -72,15 +86,14 @@ Algorithms:
     -   **Time Complexity (Search):** O(L), where L is the length of the query.
     -   **Space Complexity:** O(N*L), where N is the number of words and L is the average word length.
 -   **Inverted Index:**
-    
     -   **Structure:** A mapping of keywords to the documents (food items or restaurants) they appear in.
     -   **Use:** Quickly retrieves all documents containing a specific keyword, ideal for broader keyword searches.
     -   **Time Complexity (Search):** O(k), where k is the number of documents containing the keyword.
     -   **Space Complexity:** O(N*L), where N is the number of documents and L is the average document length.
-    
-   **Approach:**
-    -   **Design:** Combine tries and inverted indexes to handle both substring and keyword searches.
-    -   **Implementation:** Use tries for substring matching and auto-suggestions as the user types. Use the inverted index for broader keyword searches.
+
+**Approach** <br>
+    -  **Design:** Combine tries and inverted indexes to handle both substring and keyword searches.<br>
+    -  **Implementation:** Use tries for substring matching and auto-suggestions as the user types. Use the inverted index for broader keyword searches. <br>
  
 ## 2. Ranked Search Result Swiggy App
 
