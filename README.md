@@ -16,12 +16,8 @@
 
 * * *
 
-> A step towards better food delivery management
->
-> Kingsman44
-
 #### Note:
-This page hosts:
+This Portfolio hosts:
 
 1. Introduction
 2. Objectives
@@ -91,9 +87,9 @@ Algorithms:
     -   **Time Complexity (Search):** O(k), where k is the number of documents containing the keyword.
     -   **Space Complexity:** O(N*L), where N is the number of documents and L is the average document length.
 
-**Approach** <br>
-    -  **Design:** Combine tries and inverted indexes to handle both substring and keyword searches.<br>
-    -  **Implementation:** Use tries for substring matching and auto-suggestions as the user types. Use the inverted index for broader keyword searches. <br>
+**Approach**
+-  **Design:** Combine tries and inverted indexes to handle both substring and keyword searches.
+-  **Implementation:** Use tries for substring matching and auto-suggestions as the user types. Use the inverted index for broader keyword searches.
  
 ## 2. Ranked Search Result Swiggy App
 
@@ -103,11 +99,11 @@ Algorithms:
 
 **Market Benefits:** A well-optimized search ranking algorithm can significantly impact Swiggy's bottom line. By showcasing the most relevant and enticing options to users, the platform can increase order frequency, average order value, and customer lifetime value. Additionally, a positive search experience can enhance user satisfaction and foster long-term loyalty.
 
-Algorithms:
+**Algorithms:**
 
-- **Quick Sort:**
-    -   **Time Complexity (Search):** O(N log(n))
-    -   **Space Complexity:** O(log(n))
+### 1. Quick Sort:
+-   **Time Complexity (Search):** O(N log(n))
+-   **Space Complexity:** O(log(n))
 
 **Aproach**
 **Weighted Sum Model Implementation:**
@@ -296,10 +292,10 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithm:**
 
--   **Multiple Traveling Salesman Problem (mTSP):**
-    -   **Use:** Extends the classic Traveling Salesman Problem to multiple salesmen (delivery personnel), optimizing the delivery routes for each person while considering capacity constraints.
-    -   **Time Complexity:** O((N!)^M), where N is the number of locations and M is the number of delivery personnel.
-    -   **Space Complexity:** O(N*M)
+### 1. Multiple Traveling Salesman Problem (mTSP):
+-   **Use:** Extends the classic Traveling Salesman Problem to multiple salesmen (delivery personnel), optimizing the delivery routes for each person while considering capacity constraints.
+-   **Time Complexity:** O((N!)^M), where N is the number of locations and M is the number of delivery personnel.
+-   **Space Complexity:** O(N*M)
 
 **Approach:**
 
@@ -352,10 +348,10 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithm:**
 
--   **Merge Sort:**
-    -   **Use:** Efficiently sorts large lists based on various criteria.
-    -   **Time Complexity:** O(N log N)
-    -   **Space Complexity:** O(N)
+### 1. Merge Sort:
+-   **Use:** Efficiently sorts large lists based on various criteria.
+-   **Time Complexity:** O(N log N)
+-   **Space Complexity:** O(N)
 
 
 ## 11. Real-Time Order Tracking
@@ -369,11 +365,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
-- **A* Search Algorithm: **
-    -   **Purpose:** Find the shortest path in a graph with real-time updates for dynamic conditions like traffic.
-    -   **Application:** Calculate the optimal route for delivery executives in real-time.
-    -   **Time Complexity:** O(E), where E is the number of edges.
-    -   **Space Complexity:** O(V), where V is the number of vertices.
+### 1. A* Search Algorithm:
+-   **Purpose:** Find the shortest path in a graph with real-time updates for dynamic conditions like traffic.
+-   **Application:** Calculate the optimal route for delivery executives in real-time.
+-   **Time Complexity:** O(E), where E is the number of edges.
+-   **Space Complexity:** O(V), where V is the number of vertices.
 
 **Approach:**
 
@@ -392,14 +388,13 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
--   **K-Means Clustering:**
-    -   **Purpose:** Group customers into clusters based on their features.
-    -   **Application:** Segment customers for personalized marketing.
-    -   **Time Complexity:** O(n * k * t), where n is the number of data points, k is the number of clusters, and t is the number of iterations.
-    -   **Space Complexity:** O(n * k).
+### 1. K-Means Clustering:
+-   **Purpose:** Group customers into clusters based on their features.
+-   **Application:** Segment customers for personalized marketing.
+-   **Time Complexity:** O(n * k * t), where n is the number of data points, k is the number of clusters, and t is the number of iterations.
+-   **Space Complexity:** O(n * k).
 
 **Approach:**
-
 1.  **Feature Extraction:** Collect data on customer behavior, preferences, and demographics.
 2.  **Clustering:** Use K-Means to segment customers into clusters.
 
@@ -414,9 +409,9 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms, Design Techniques, Performance Analysis:**
 
--   **Huffman Coding:** Greedy approach, Variable-length encoding
-    -   **Time Complexity:** O(n log n) for building the Huffman tree, where n is the number of symbols
-    -   **Space Complexity:** O(n) for storing the Huffman tree and encoded data
+### 1. Huffman Coding: Greedy approach, Variable-length encoding
+-   **Time Complexity:** O(n log n) for building the Huffman tree, where n is the number of symbols
+-   **Space Complexity:** O(n) for storing the Huffman tree and encoded data
 
 
 ## 14.  Real-Time Order Tracking and Statistics using Fenwick Trees
@@ -428,11 +423,12 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Market Benefits:** Real-time order tracking and statistics empower Swiggy to proactively identify and address operational issues, optimize delivery routes, and allocate resources more effectively. This can lead to improved delivery times, reduced costs, and enhanced customer satisfaction. Furthermore, the ability to analyze historical data trends can help Swiggy make strategic decisions regarding inventory management, staffing, and marketing initiatives, ultimately driving business growth and profitability.
 
-**Algorithms, Design Techniques, Performance Analysis:**
+**Algorithms**
 
--   **Fenwick Tree (Binary Indexed Tree):** Data structure for cumulative frequency tables.
-    -   **Time Complexity:** O(log n) for both updates and prefix sum queries.
-    -   **Space Complexity:** O(n) for storing the tree.
+### 1. Fenwick Tree (Binary Indexed Tree) 
+-    Data structure for cumulative frequency tables.
+-  **Time Complexity:** O(log n) for both updates and prefix sum queries.
+-   **Space Complexity:** O(n) for storing the tree.
 
 
 ## 15. Order Dispatch Optimization using Max-Heap (Priority Queue)
