@@ -66,8 +66,8 @@ The primary objectives of this portfolio are to:
 **Challenges:** The primary challenge lies in efficiently handling a vast and constantly evolving database of restaurants and food items. Additionally, the system needs to accommodate a wide range of user queries, including typos, abbreviations, and varying levels of specificity. Striking the right balance between offering a broad selection of suggestions and ensuring their relevance to the user's preferences is another key challenge.
 
 **Market Benefits:** A robust live search feature can significantly improve user engagement and satisfaction. By reducing the time and effort required to find desired food options, Swiggy can encourage more frequent orders and foster greater customer loyalty. The personalized nature of the suggestions can also lead to the discovery of new restaurants and dishes, enhancing the overall user experience and differentiating Swiggy from its competitors.
-Excepted Results:
 
+**Excepted Results:**
  - Search for Pizz.
  - Show Pizza, Dominos Pizza, Pizza Hut etc...
 
@@ -99,6 +99,11 @@ Algorithms:
 
 **Market Benefits:** A well-optimized search ranking algorithm can significantly impact Swiggy's bottom line. By showcasing the most relevant and enticing options to users, the platform can increase order frequency, average order value, and customer lifetime value. Additionally, a positive search experience can enhance user satisfaction and foster long-term loyalty.
 
+**Expected Results:**
+- Ranked wise Search Results
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/e8abdb7c-097e-4814-b75d-7a4fd9cd4bfe)
+
 **Algorithms:**
 
 ### 1. Quick Sort:
@@ -117,61 +122,7 @@ Algorithms:
 3.  **Sorting the Weighted Sum Model:**
     - Using QuickSort to sort the results, and show to users
 
-## 3. Enhancing Food Recommendations using Graph Methods
-
-**Use Case:** Swiggy aims to revolutionize its food recommendation system by employing graph methods to analyze the complex relationships between food items, cuisines, and user preferences. This approach goes beyond traditional collaborative filtering by uncovering hidden connections and patterns that can lead to more accurate and personalized recommendations. By understanding how different food items are related and how users interact with them, Swiggy can tailor its suggestions to individual tastes, leading to higher user engagement and satisfaction.
-
-**Challenges:** Building a comprehensive and accurate food graph that captures the nuances of culinary relationships is a complex task. Choosing the right graph algorithms and embedding techniques to extract meaningful insights from the graph is crucial. Additionally, balancing the exploration of new food options with the recommendation of familiar favorites is essential to keep users engaged and satisfied.
-
-**Market Benefits:** By providing highly personalized food recommendations, Swiggy can significantly increase user engagement and the likelihood of repeat orders. This can translate to higher revenue and a stronger competitive edge in the food delivery market. Moreover, a superior recommendation system can enhance the overall user experience, making Swiggy the go-to platform for discovering new and exciting food options.
-
-**Algorithms:**
-
-### 1. Graph Embedding (Node2Vec):
-- **Purpose:** Learn low-dimensional vector representations of nodes (food items) in a graph, capturing the structural and semantic relationships between them.
-- **Application:** Construct a graph representing the relationships between food items (e.g., co-occurrence, substitutes, complements) and use Node2Vec to learn embeddings for each item.
-- **Time Complexity:** O(d * V * E), where d is the dimensionality of the embeddings, V is the number of nodes, and E is the number of edges.
-- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
-
-### 2. Random Walk-based Recommendation:
-- **Purpose:** Leverage the learned graph embeddings to generate personalized food recommendations for users.
-- **Application:** Perform random walks starting from the user's preferred food items to explore the graph and identify relevant recommendations.
-- **Time Complexity:** O(k * V), where k is the number of random walks and V is the number of nodes.
-- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
-
-**Approach:**
-1. Construct a food item graph based on various relationships (e.g., co-occurrence, substitutes, complements).
-2. Use Node2Vec to learn low-dimensional embeddings for each food item, capturing their structural and semantic relationships.
-3. Perform random walks starting from the user's preferred food items to explore the graph and identify relevant recommendations.
-4. Combine the recommendations from the random walk-based approach with other recommendation techniques (e.g., collaborative filtering, content-based filtering) to provide a comprehensive and personalized food recommendation experience.
-
-By leveraging graph-based methods, Swiggy can enhance its food recommendations by capturing the complex relationships between food items and providing more relevant and personalized suggestions to users.
-
-## 4. Identifying Fraud Rings Using Domain-Aware Weighted Community Detection
-
-**Use Case:** Swiggy, like any online platform, faces the constant threat of fraudulent activities that can undermine its integrity and harm its users. These activities can range from fake accounts and reviews to coordinated attacks and collusion schemes. By employing domain-aware weighted community detection algorithms, Swiggy can proactively identify suspicious patterns of behavior and connections between users, allowing for early intervention and mitigation of potential fraud. This approach is essential to maintain the platform's trustworthiness and protect both users and the company itself from financial losses and reputational damage.
-
-**Challenges:** Detecting fraud is an ongoing arms race, as fraudsters continuously adapt their techniques to evade detection. Therefore, the algorithms used for community detection need to be constantly updated and refined. Additionally, striking the right balance between sensitivity (identifying true fraudsters) and specificity (avoiding false positives) is crucial to minimize disruptions to legitimate users.
-
-**Market Benefits:** By effectively identifying and neutralizing fraud rings, Swiggy can significantly improve the security and reliability of its platform. This can lead to increased user trust, higher engagement, and ultimately, greater revenue. Additionally, a proactive approach to fraud detection can reduce financial losses due to fraudulent activities and protect the company's reputation in the market.
-
-**Algorithms:**
-
-### 1. Domain-Aware Weighted Community Detection:
-- **Purpose:** Identify groups of connected entities (e.g., users, devices, accounts) that exhibit fraudulent behavior.
-- **Application:** Construct a weighted graph representing the relationships between entities (e.g., based on shared attributes, co-occurrences, or interactions) and apply community detection algorithms to identify densely connected subgroups that may represent fraud rings.
-- **Time Complexity:** O(V + E), where V is the number of nodes and E is the number of edges in the graph.
-- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges in the graph.
-
-**Approach:**
-1. Collect and preprocess data from various sources (e.g., user accounts, device information, transaction logs) to construct a weighted graph representing the relationships between entities.
-2. Incorporate domain-specific knowledge and features (e.g., user profiles, device characteristics, transaction patterns) to weight the edges in the graph, reflecting the likelihood of fraudulent connections.
-3. Apply community detection algorithms, such as Louvain or Label Propagation, to identify densely connected subgroups in the graph that may represent fraud rings.
-4. Analyze the detected communities and their characteristics to prioritize investigations and take appropriate actions to mitigate the identified fraudulent activities.
-
-![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/1aa055c6-78de-4672-856b-b4fb14def1bf)
-
-## 5. Assignment & Routing Optimization for Swiggy Instamart Delivery
+## 3. Assignment & Routing Optimization for Swiggy Instamart Delivery
 
 **Use Case:** Swiggy Instamart, the company's grocery delivery service, requires efficient assignment of delivery executives to incoming orders and optimization of their delivery routes. This is essential to ensure timely deliveries, minimize operational costs, and maximize customer satisfaction. By utilizing advanced algorithms and real-time data, Swiggy can intelligently match delivery executives with orders based on proximity, availability, and other relevant factors. Additionally, the platform can dynamically optimize delivery routes to account for traffic conditions, order volumes, and other variables, ensuring the fastest and most cost-effective delivery possible.
 
@@ -202,8 +153,7 @@ By leveraging graph-based methods, Swiggy can enhance its food recommendations b
 
 By combining bipartite matching for assignment and VRP for routing, Swiggy can optimize the Instamart delivery operations, ensuring timely and cost-effective deliveries to customers.
 
-## 6. Personalizing Swiggy POP Recommendations
-
+## 4. Personalizing Swiggy POP Recommendations
 
 **Use Case:** Swiggy POP, a service offering single-serve, quick-checkout meals, aims to enhance the user experience by providing personalized recommendations. This involves tailoring the menu to individual preferences based on past orders, browsing history, dietary restrictions, and other relevant factors. By presenting users with options they are most likely to enjoy, Swiggy can increase order frequency, average order value, and overall user satisfaction.
 
@@ -225,7 +175,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 - **Time Complexity (Search):** O(k), where k is the number of food items containing the keyword.
 - **Space Complexity:** O(N*L), where N is the number of food items and L is the average length of a food item.
 
-## 7. Finding All Restaurants Near Me Using Geospatial Data Structures
+## 5. Finding All Restaurants Near Me Using Geospatial Data Structures
 
 **Use Case:** In the competitive food delivery market, Swiggy aims to provide a seamless and user-friendly experience by quickly displaying restaurants near the user's location. This involves utilizing geospatial data structures, such as k-d trees or quadtrees, to efficiently store and query restaurant locations. By implementing algorithms for range queries, Swiggy can instantly identify all restaurants within a specified radius of the user, enabling faster decision-making and increased convenience.
 
@@ -258,7 +208,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 <img width="461" alt="image" src="https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/2882c7bf-8a62-48bc-9e1d-5e954128d8de">
 
-## 8. Finding the Delivery Charges
+## 6. Finding the Delivery Charges
 
 **Use Case:** Swiggy aims to provide transparent and accurate delivery charges to its users. To achieve this, it needs to efficiently calculate the optimal route and distance between the user's location and the selected restaurant. This is crucial for ensuring fair pricing for both customers and delivery partners, building trust, and maintaining a positive user experience.
 
@@ -281,7 +231,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 3.  **Provide the Fare:** Calculate fare
 
 
-## 9. Shortest Path for Multi-Parcel Delivery
+## 7. Shortest Path for Multi-Parcel Delivery
 
 
 **Use Case:** To optimize efficiency and reduce delivery times, Swiggy aims to find the shortest possible routes for delivery personnel who are responsible for delivering multiple parcels at a time. This is a complex logistical challenge, as it requires finding the most efficient route that visits multiple locations while adhering to the capacity constraints of each delivery person. By optimizing these routes, Swiggy can reduce delivery times, increase the number of deliveries per hour, and improve the overall customer experience.
@@ -338,7 +288,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
     -   Deploy the optimized routes to the delivery personnel via a mobile application.
     -   Provide real-time navigation and updates to ensure timely deliveries.
 
-## 10. Sorting and Filtering Food Items
+## 8. Sorting and Filtering Food Items
 
 **Use Case:** Swiggy recognizes the importance of providing users with a seamless and intuitive way to navigate its extensive menu. To achieve this, the platform aims to offer robust sorting and filtering capabilities, allowing users to quickly find food items that meet their specific criteria, such as price range, cuisine type, dietary restrictions, and customer ratings. By enabling users to personalize their search, Swiggy can cater to diverse preferences and ensure that each user finds exactly what they are looking for. This not only enhances the user experience but also increases the likelihood of placing an order.
 
@@ -354,7 +304,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Space Complexity:** O(N)
 
 
-## 11. Real-Time Order Tracking
+## 9. Real-Time Order Tracking
 
 
 **Use Case:** Swiggy recognizes the importance of providing customers with real-time visibility into their order status and delivery progress. By implementing real-time order tracking, Swiggy can offer customers a live map view of their order's journey from the restaurant to their doorstep, along with accurate estimated time of arrival (ETA) updates. This feature enhances transparency and customer satisfaction by reducing anxiety associated with waiting for deliveries and empowering customers with information to plan their schedules accordingly.
@@ -377,7 +327,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 2.  **Real-Time Updates:** Continuously update the graph with real-time traffic data.
 3.  **Pathfinding:** Use the A* algorithm to find the shortest path for delivery executives.
 
-## 12. Customer Segmentation
+## 10. Customer Segmentation
 
 
 **Use Case:** To deliver personalized experiences and targeted marketing campaigns, Swiggy aims to segment its vast customer base into distinct groups based on their ordering behavior, preferences, and demographics. This involves analyzing a wide range of data points, such as order history, cuisine preferences, average order value, and location. By understanding the unique characteristics of each customer segment, Swiggy can tailor its offerings and promotions to specific groups, resulting in higher engagement, increased conversions, and improved customer lifetime value.
@@ -398,7 +348,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 1.  **Feature Extraction:** Collect data on customer behavior, preferences, and demographics.
 2.  **Clustering:** Use K-Means to segment customers into clusters.
 
-##  13. Data Compression in Swiggy's Infrastructure using Huffman Coding
+##  11. Data Compression in Swiggy's Infrastructure using Huffman Coding
 
 
 **Use Case:** As a leading food delivery platform, Swiggy handles massive amounts of data, including order details, customer information, restaurant menus, and user interactions. This data needs to be stored efficiently and transmitted quickly to ensure a seamless user experience. Huffman coding, a lossless data compression algorithm, can be employed to reduce the size of this data without compromising its integrity. By encoding frequently occurring data with shorter codes and less frequent data with longer codes, Swiggy can significantly reduce storage requirements and bandwidth usage, leading to faster data transfer speeds and improved overall performance.
@@ -414,7 +364,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Space Complexity:** O(n) for storing the Huffman tree and encoded data
 
 
-## 14.  Real-Time Order Tracking and Statistics using Fenwick Trees
+## 12.  Real-Time Order Tracking and Statistics using Fenwick Trees
 
 
 **Use Case:** Swiggy's commitment to operational efficiency and data-driven decision-making requires a robust system for tracking and analyzing order statistics in real time. Fenwick trees, also known as Binary Indexed Trees, provide an elegant solution for managing cumulative frequencies of events, such as the number of deliveries completed within specific timeframes, average delivery times across different zones, or peak order periods. By leveraging Fenwick trees, Swiggy can efficiently update and query these statistics on the fly, enabling real-time monitoring of key performance indicators and facilitating swift responses to operational bottlenecks or surges in demand.
@@ -431,7 +381,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Space Complexity:** O(n) for storing the tree.
 
 
-## 15. Order Dispatch Optimization using Max-Heap (Priority Queue)
+## 13. Order Dispatch Optimization using Max-Heap (Priority Queue)
 
 
 **Use Case:** Efficient order dispatch is critical for Swiggy's success in the fast-paced food delivery industry. By utilizing a max-heap (priority queue) data structure, Swiggy can intelligently prioritize incoming orders based on various factors, such as urgency, estimated delivery time, customer location, and delivery executive availability. This ensures that orders are assigned to the most suitable delivery partners in real time, leading to faster deliveries, improved customer satisfaction, and optimal utilization of resources.
@@ -450,7 +400,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Space Complexity:** O(n), where n is the number of elements in the heap.
 
 
-## 16. Restaurant Rating and Sorting using Red-Black Trees
+## 14. Restaurant Rating and Sorting using Red-Black Trees
 
 
 **Use Case:** Swiggy understands that users heavily rely on restaurant ratings to make informed decisions about where to order from. To cater to this, Swiggy needs to maintain a dynamic and efficient system for storing, updating, and sorting restaurants based on their ratings. Red-black trees, a type of self-balancing binary search tree, are ideal for this purpose. By storing restaurant ratings in a red-black tree, Swiggy can efficiently insert new ratings, update existing ones, and retrieve a sorted list of restaurants based on their ratings in real time. This enables features like filtering restaurants by rating, showcasing top-rated establishments, and providing personalized recommendations based on user preferences.
@@ -475,7 +425,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 3.  **Sorted Restaurant List:** Traverse the red-black tree in-order to obtain a sorted list of restaurants based on their ratings.
 4.  **Filtering and Searching:** Use the red-black tree's search functionality to efficiently filter and search for restaurants based on their ratings.
 
-## 17. Delivery Time Estimates using Segment Trees for Range Queries
+## 15. Delivery Time Estimates using Segment Trees for Range Queries
 
 **Use Case:** Providing accurate and dynamic delivery time estimates is crucial for enhancing the customer experience on Swiggy. Customers want to know when they can expect their food to arrive, and accurate estimates can help them plan their meals and schedules accordingly. Segment trees, a versatile data structure for range queries, can be utilized to efficiently calculate and update delivery time estimates based on various factors such as restaurant preparation time, distance to the customer, traffic conditions, and delivery executive availability. By leveraging segment trees, Swiggy can provide real-time and reliable ETA updates, improving customer satisfaction and reducing anxiety associated with waiting for deliveries.
 
@@ -500,7 +450,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 4.  **Continuous Monitoring:** Continuously monitor and update the delivery time estimates in the segment tree based on real-time data to ensure accurate and up-to-date information.
 
 
-## 18. Priority Queue for Call Wait Time Management and Swiggy One Membership
+## 16. Priority Queue for Call Wait Time Management and Swiggy One Membership
 
 **Use Case:** To provide exceptional customer support, Swiggy aims to prioritize customer calls based on urgency and membership status. Swiggy One members, who pay a premium subscription fee, should be given higher priority in the call queue to ensure they receive prompt assistance. By utilizing a priority queue data structure, Swiggy can efficiently manage incoming calls, prioritize urgent inquiries, and provide preferential treatment to its valued Swiggy One members.
 
@@ -516,3 +466,64 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Application:** Store the incoming customer calls in a priority queue, where the priority of each call is determined by factors such as call wait time, customer priority, and Swiggy One membership status.
 -   **Time Complexity:** O(log n) for insertion, deletion, and retrieval of the maximum (highest priority) element, where n is the number of elements in the queue.
 -   **Space Complexity:** O(n), where n is the number of elements in the queue.
+
+## 17. Enhancing Food Recommendations using Graph Methods
+
+**Use Case:** Swiggy aims to revolutionize its food recommendation system by employing graph methods to analyze the complex relationships between food items, cuisines, and user preferences. This approach goes beyond traditional collaborative filtering by uncovering hidden connections and patterns that can lead to more accurate and personalized recommendations. By understanding how different food items are related and how users interact with them, Swiggy can tailor its suggestions to individual tastes, leading to higher user engagement and satisfaction.
+
+**Challenges:** Building a comprehensive and accurate food graph that captures the nuances of culinary relationships is a complex task. Choosing the right graph algorithms and embedding techniques to extract meaningful insights from the graph is crucial. Additionally, balancing the exploration of new food options with the recommendation of familiar favorites is essential to keep users engaged and satisfied.
+
+**Market Benefits:** By providing highly personalized food recommendations, Swiggy can significantly increase user engagement and the likelihood of repeat orders. This can translate to higher revenue and a stronger competitive edge in the food delivery market. Moreover, a superior recommendation system can enhance the overall user experience, making Swiggy the go-to platform for discovering new and exciting food options.
+
+**Algorithms:**
+
+### 1. Graph Embedding (Node2Vec) \[1\]:
+- **Purpose:** Learn low-dimensional vector representations of nodes (food items) in a graph, capturing the structural and semantic relationships between them.
+- **Application:** Construct a graph representing the relationships between food items (e.g., co-occurrence, substitutes, complements) and use Node2Vec to learn embeddings for each item.
+- **Time Complexity:** O(d * V * E), where d is the dimensionality of the embeddings, V is the number of nodes, and E is the number of edges.
+- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
+
+### 2. Random Walk-based Recommendation \[2\]:
+- **Purpose:** Leverage the learned graph embeddings to generate personalized food recommendations for users.
+- **Application:** Perform random walks starting from the user's preferred food items to explore the graph and identify relevant recommendations.
+- **Time Complexity:** O(k * V), where k is the number of random walks and V is the number of nodes.
+- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges.
+
+**Approach:**
+1. Construct a food item graph based on various relationships (e.g., co-occurrence, substitutes, complements).
+2. Use Node2Vec \[1\] to learn low-dimensional embeddings for each food item, capturing their structural and semantic relationships.
+3. Perform random walks starting from the user's preferred food items to explore the graph and identify relevant recommendations.
+4. Combine the recommendations from the random walk-based \[2\] approach with other recommendation techniques (e.g., collaborative filtering, content-based filtering) to provide a comprehensive and personalized food recommendation experience.
+
+By leveraging graph-based methods, Swiggy can enhance its food recommendations by capturing the complex relationships between food items and providing more relevant and personalized suggestions to users.
+
+**Citations:**
+-    \[1\]  [Aditya Grover and Jure Leskovec, "node2vec: Scalable Feature Learning for Networks,"](https://arxiv.org/abs/1607.00653)
+-    \[2\]  [Cooper, C., Lee, S. H., Radzik, T., & Siantos, Y. (2010, January). Random walks in recommender systems: Exact computation and simulations. Department Of Informatics, King's College, London, U.K](https://nms.kcl.ac.uk/colin.cooper/papers/recommender-rw.pdf)
+
+## 18. Identifying Fraud Rings Using Domain-Aware Weighted Community Detection
+
+**Use Case:** Swiggy, like any online platform, faces the constant threat of fraudulent activities that can undermine its integrity and harm its users. These activities can range from fake accounts and reviews to coordinated attacks and collusion schemes. By employing domain-aware weighted community detection algorithms, Swiggy can proactively identify suspicious patterns of behavior and connections between users, allowing for early intervention and mitigation of potential fraud. This approach is essential to maintain the platform's trustworthiness and protect both users and the company itself from financial losses and reputational damage.
+
+**Challenges:** Detecting fraud is an ongoing arms race, as fraudsters continuously adapt their techniques to evade detection. Therefore, the algorithms used for community detection need to be constantly updated and refined. Additionally, striking the right balance between sensitivity (identifying true fraudsters) and specificity (avoiding false positives) is crucial to minimize disruptions to legitimate users.
+
+**Market Benefits:** By effectively identifying and neutralizing fraud rings, Swiggy can significantly improve the security and reliability of its platform. This can lead to increased user trust, higher engagement, and ultimately, greater revenue. Additionally, a proactive approach to fraud detection can reduce financial losses due to fraudulent activities and protect the company's reputation in the market.
+
+**Algorithms:**
+
+### 1. Domain-Aware Weighted Community Detection \[1\]:
+- **Purpose:** Identify groups of connected entities (e.g., users, devices, accounts) that exhibit fraudulent behavior.
+- **Application:** Construct a weighted graph representing the relationships between entities (e.g., based on shared attributes, co-occurrences, or interactions) and apply community detection algorithms to identify densely connected subgroups that may represent fraud rings.
+- **Time Complexity:** O(V + E), where V is the number of nodes and E is the number of edges in the graph.
+- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges in the graph.
+
+**Approach:**
+1. Collect and preprocess data from various sources (e.g., user accounts, device information, transaction logs) to construct a weighted graph representing the relationships between entities.
+2. Incorporate domain-specific knowledge and features (e.g., user profiles, device characteristics, transaction patterns) to weight the edges in the graph, reflecting the likelihood of fraudulent connections.
+3. Apply community detection algorithm Label Propagation, to identify densely connected subgroups in the graph that may represent fraud rings.
+4. Analyze the detected communities and their characteristics to prioritize investigations and take appropriate actions to mitigate the identified fraudulent activities.
+
+**Citations:**
+- \[1\] Masihullah, S. (2022, August 5). Identifying Fraud Rings Using Domain Aware Weighted Community Detection. _Medium_. https://bytes.swiggy.com/identifying-fraud-rings-using-domain-aware-weighted-community-detection-6a14c27c43e0
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/1aa055c6-78de-4672-856b-b4fb14def1bf)
