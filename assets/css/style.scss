@@ -4,12 +4,17 @@
 @import "{{ site.theme }}";
 .main-content {
   h1,
-  h2,
   h3,
   h4,
   h5,
   h6 {
     color: #f36e00;
+  }
+  h2 {
+    color: #fff;
+    background-color: #f36e00;
+    padding: 10px 20px;
+    border-radius: 20px;
   }
 }
 .page-header {
