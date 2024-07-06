@@ -28,7 +28,26 @@ This page hosts:
 3. Business Use Cases
 4. Learnings and key takeaways
 
-# Business Use Cases:
+
+# 1. Introduction
+
+In the dynamic landscape of the modern food industry, technology plays a pivotal role in shaping customer experiences and optimizing operational efficiency. Swiggy, as a leading food delivery platform, recognizes the importance of leveraging cutting-edge solutions to stay ahead of the curve. This portfolio delves into the application of algorithmic problem-solving techniques to address various challenges faced by Swiggy in its day-to-day operations.
+
+The food delivery industry is characterized by complex logistics, vast amounts of data, and the need to cater to diverse customer preferences. Swiggy, with its commitment to innovation and customer satisfaction, has embraced algorithmic solutions to tackle these challenges head-on [1]. From intelligent search algorithms that help users discover their favorite meals to optimized routing algorithms that ensure timely deliveries, Swiggy's technological prowess is evident in every aspect of its service [2].
+
+This portfolio explores a range of algorithmic use cases relevant to Swiggy's business model. We will examine how Swiggy employs algorithms to enhance search functionality, provide personalized recommendations, detect fraudulent activities, optimize delivery routes, manage customer support, and even compress data for efficient storage and transmission. Through this exploration, we will gain insights into how algorithmic problem-solving can transform the food delivery industry, making it more efficient, customer-centric, and adaptable to the ever-changing needs of the market.
+
+By showcasing the diverse applications of algorithms within Swiggy's ecosystem, this portfolio aims to highlight the significance of computational thinking and problem-solving skills in the modern business landscape [3]. It serves as a testament to Swiggy's commitment to innovation and its relentless pursuit of excellence in the food delivery industry.
+
+**References:**
+
+[1] Ritwik Moghe, "Logistic Zones for Assignment," _Swiggy Bytes - Tech Blog_, 2023. [Online]. Available: [https://bytes.swiggy.com/logistic-zones-for-assignment-48d9ce06c4a8](https://bytes.swiggy.com/logistic-zones-for-assignment-48d9ce06c4a8)
+
+[2] Devansh Gupta, "The Swiggy Delivery Challenge (Part Two)," _Swiggy Bytes - Tech Blog_, 2023. [Online]. Available: [https://bytes.swiggy.com/the-swiggy-delivery-challenge-part-two-f095930816e3](https://bytes.swiggy.com/the-swiggy-delivery-challenge-part-two-f095930816e3)
+
+[3] GeeksforGeeks. "Algorithms." [Online]. Available: [https://www.geeksforgeeks.org/fundamentals-of-algorithms/](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+
+# 3. Business Use Cases:
 
 ## 1. Live Search Completion or suggestion in Swiggy App
 
