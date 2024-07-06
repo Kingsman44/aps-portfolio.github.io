@@ -99,7 +99,7 @@ Algorithms:
 
 **Market Benefits:** A well-optimized search ranking algorithm can significantly impact Swiggy's bottom line. By showcasing the most relevant and enticing options to users, the platform can increase order frequency, average order value, and customer lifetime value. Additionally, a positive search experience can enhance user satisfaction and foster long-term loyalty.
 
-**Expected Results:**
+**One of the Expected Results:**
 - Ranked wise Search Results
 
 ![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/e8abdb7c-097e-4814-b75d-7a4fd9cd4bfe)
@@ -129,6 +129,13 @@ Algorithms:
 **Challenges:** The dynamic nature of the grocery delivery landscape poses significant challenges. Order volumes can fluctuate rapidly, traffic conditions can change unexpectedly, and delivery executives may have varying availability. To effectively address these challenges, the assignment and routing algorithms need to be adaptable, scalable, and capable of processing real-time data.
 
 **Market Benefits:** Optimizing assignment and routing can lead to significant cost savings for Swiggy, as it reduces the distance traveled by delivery executives and minimizes fuel consumption. Additionally, faster and more reliable deliveries enhance customer satisfaction and loyalty, further strengthening Swiggy's position in the competitive grocery delivery market.
+
+**Excepted Results**
+- Shortest Path
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/cc7f3a30-8ff4-47f2-bdc0-2456d38c9941)
+
+
 
 **Algorithms:**
 
@@ -161,6 +168,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Market Benefits:** A personalized recommendation engine can be a powerful tool for driving user engagement and boosting sales. By showcasing the most appealing options to each user, Swiggy can increase the likelihood of conversions and encourage repeat orders. Additionally, personalized recommendations can foster a sense of individual attention and care, enhancing the overall user experience and building brand loyalty.
 
+**Excepted Results**
+- Personalised Restaurants recommendations
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/bd3f2b36-a659-4caf-8813-b6033b9f0ba3)
+
 **Algorithms:**
 
 ### 1. Trie (Prefix Tree) for Eligibility:
@@ -182,6 +194,12 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 **Challenges:** The challenge lies in managing a large and dynamic dataset of restaurant locations while ensuring real-time response times for location-based queries. The algorithms need to be optimized for both accuracy and speed to deliver a smooth user experience. Additionally, handling edge cases, such as users located in areas with limited restaurant options, requires careful consideration to provide relevant and useful results.
 
 **Market Benefits:** A robust location-based search feature enhances the user experience by providing quick and convenient access to nearby restaurants. This can lead to increased user engagement, higher order frequency, and a stronger competitive advantage in the market. Additionally, by showcasing local businesses, Swiggy can contribute to the growth of the local economy and foster stronger community ties.
+
+**Excepted Results:**
+- Nearby Restaurants
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/8ec38b18-a54d-4a06-93b8-5d89ac7ce76f)
+
 
 **Algorithms:**
 
@@ -215,6 +233,12 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 **Challenges:** The primary challenge is to accurately calculate the distance between two points on a map while taking into account real-world factors such as traffic conditions, road closures, and one-way streets. This requires access to up-to-date and reliable map data, as well as algorithms that can efficiently process this information.
 
 **Market Benefits:** Accurate and transparent delivery charges are essential for maintaining customer trust and satisfaction. By providing fair pricing, Swiggy can attract and retain customers, leading to increased order volume and revenue. Additionally, fair compensation for delivery partners based on accurate distance calculations can improve their satisfaction and motivation, contributing to a more reliable and efficient delivery service.
+
+**Excepted Results:**
+- Delivery charge based on KM's
+
+ ![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/b4af5a1e-22a4-4404-a5d9-ed630d3656ba)
+
 **Algorithms:**
 
 ### 1. Dijkstra's Algorithm:
@@ -296,6 +320,12 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Market Benefits:** Effective sorting and filtering features can significantly improve user satisfaction and engagement. By enabling users to quickly find the food items that best match their needs and preferences, Swiggy can encourage more frequent orders and increase the average order value. Furthermore, a positive user experience can foster customer loyalty and drive repeat business, contributing to Swiggy's long-term success in the competitive food delivery market.
 
+**One of the Expected Results**
+- Filter by 4.0+ Ratings
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/fbf7dcbe-67d7-46f7-80e5-451a1f37d332)
+
+
 **Algorithm:**
 
 ### 1. Merge Sort:
@@ -306,12 +336,17 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 ## 9. Real-Time Order Tracking
 
-
 **Use Case:** Swiggy recognizes the importance of providing customers with real-time visibility into their order status and delivery progress. By implementing real-time order tracking, Swiggy can offer customers a live map view of their order's journey from the restaurant to their doorstep, along with accurate estimated time of arrival (ETA) updates. This feature enhances transparency and customer satisfaction by reducing anxiety associated with waiting for deliveries and empowering customers with information to plan their schedules accordingly.
 
 **Challenges:** Accurately tracking the location of delivery executives in real-time, while accounting for dynamic traffic conditions and unexpected delays, presents a significant challenge. Swiggy must leverage GPS technology and sophisticated algorithms to ensure the tracking information is reliable and up-to-date. Furthermore, communicating ETA updates in a clear and timely manner is crucial to managing customer expectations and providing a positive delivery experience.
 
 **Market Benefits:** Real-time order tracking is a key differentiator in the competitive food delivery market. It not only enhances the customer experience but also builds trust and loyalty. By providing transparency and control over the delivery process, Swiggy can solidify its position as a customer-centric platform and encourage repeat business.
+
+**One of the Excepted Result:**
+- Live Trackable Order
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/ab183780-d0d4-4b98-b0a4-445f59af0abd)
+
 
 **Algorithms:**
 
@@ -336,6 +371,12 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Market Benefits:** Effective customer segmentation allows Swiggy to move away from a one-size-fits-all approach and instead deliver personalized experiences that resonate with each customer segment. This can lead to higher customer satisfaction, increased loyalty, and improved marketing ROI. By tailoring recommendations, offers, and communications to specific groups, Swiggy can drive engagement, boost sales, and gain a competitive edge in the market.
 
+**One of the Excepted Results**
+- Personalised Ads based on segementation
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/f701d2cd-35cc-4a6f-9c01-53410b82d7bc)
+
+
 **Algorithms:**
 
 ### 1. K-Means Clustering:
@@ -350,7 +391,6 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 ##  11. Data Compression in Swiggy's Infrastructure using Huffman Coding
 
-
 **Use Case:** As a leading food delivery platform, Swiggy handles massive amounts of data, including order details, customer information, restaurant menus, and user interactions. This data needs to be stored efficiently and transmitted quickly to ensure a seamless user experience. Huffman coding, a lossless data compression algorithm, can be employed to reduce the size of this data without compromising its integrity. By encoding frequently occurring data with shorter codes and less frequent data with longer codes, Swiggy can significantly reduce storage requirements and bandwidth usage, leading to faster data transfer speeds and improved overall performance.
 
 **Challenges:** Implementing Huffman coding requires careful analysis of the data to identify the most frequent patterns and determine the optimal code lengths for each symbol. The compression and decompression processes need to be efficient to avoid introducing latency into the system. Additionally, ensuring compatibility with existing infrastructure and data formats can be a complex task.
@@ -364,8 +404,7 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Space Complexity:** O(n) for storing the Huffman tree and encoded data
 
 
-## 12.  Real-Time Order Tracking and Statistics using Fenwick Trees
-
+## 12.  Real-Time Order Tracking for swiggy admin and Statistics using Fenwick Trees
 
 **Use Case:** Swiggy's commitment to operational efficiency and data-driven decision-making requires a robust system for tracking and analyzing order statistics in real time. Fenwick trees, also known as Binary Indexed Trees, provide an elegant solution for managing cumulative frequencies of events, such as the number of deliveries completed within specific timeframes, average delivery times across different zones, or peak order periods. By leveraging Fenwick trees, Swiggy can efficiently update and query these statistics on the fly, enabling real-time monitoring of key performance indicators and facilitating swift responses to operational bottlenecks or surges in demand.
 
@@ -409,6 +448,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Market Benefits:** A robust restaurant rating and sorting system can significantly enhance the user experience on Swiggy. By providing users with an easy way to discover highly-rated restaurants and filter options based on their preferences, Swiggy can increase user engagement and drive more orders. Additionally, showcasing top-rated establishments can benefit restaurants by increasing their visibility and attracting more customers.
 
+**One of the Expected Results**
+- Sorted Restaurants in the local area
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/6c373108-1421-45ab-8552-9f2ff5f5ee56)
+
 **Algorithms:**
 
 ### 1. Red-Black Trees:
@@ -432,6 +476,12 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 **Challenges:** The primary challenge is to aggregate and process real-time data from multiple sources to generate accurate delivery time estimates. This involves collecting information on restaurant preparation times, delivery executive locations and availability, and traffic conditions in the delivery area. The algorithms need to be robust enough to handle unexpected delays, such as traffic congestion or order cancellations, and update the estimates accordingly.
 
 **Market Benefits:** Accurate and reliable delivery time estimates are a key factor in customer satisfaction and loyalty. By providing this information, Swiggy can set clear expectations and reduce uncertainty, leading to a more positive delivery experience. Furthermore, dynamic ETA updates can help customers plan their meals and schedules more effectively, further enhancing the overall user experience.
+
+**One of the Expected Results**
+- Real time ETA
+
+![image](https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/68494457-d3b9-4253-bb61-269fcb3b8a45)
+
 
 **Algorithms:**
 
