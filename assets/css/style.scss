@@ -21,6 +21,20 @@
     background-color: #f36e00;
     background-image: none;
 }
+.codes {
+    background-color: #f36e00;
+    display: inline-flex;
+    padding: 12px;
+    border-radius: 60px;
+    column-gap: 7px;
+}
+.codes a {
+    color: #f36e00;
+    text-decoration: none;
+    background: white;
+    padding: 8px;
+    border-radius: 25px;
+}
 @media screen and (min-width: 64em) {
     .main-content {
         max-width:64rem;
