@@ -27,7 +27,7 @@ This Portfolio hosts:
 
 # 1. Introduction
 
-In the dynamic landscape of the modern food industry, technology plays a pivotal role in shaping customer experiences and optimizing operational efficiency. Swiggy, as a leading food delivery platform, recognizes the importance of leveraging cutting-edge solutions to stay ahead of the curve. This portfolio delves into the application of algorithmic problem-solving techniques to address various challenges faced by Swiggy in its day-to-day operations.
+Swiggy is an Indian online food ordering and delivery platform. Founded in 2014, Swiggy is headquartered in Bangalore and operates in more than 580 Indian cities, as of July 2023. Besides food delivery, the platform also provides on-demand grocery deliveries under the name Instamart, and a same-day package delivery service called Swiggy Genie. This portfolio delves into the application of algorithmic problem-solving techniques to address various challenges faced by Swiggy in its day-to-day operations.
 
 The food delivery industry is characterized by complex logistics, vast amounts of data, and the need to cater to diverse customer preferences. Swiggy, with its commitment to innovation and customer satisfaction, has embraced algorithmic solutions to tackle these challenges head-on [1]. From intelligent search algorithms that help users discover their favorite meals to optimized routing algorithms that ensure timely deliveries, Swiggy's technological prowess is evident in every aspect of its service [2].
 
