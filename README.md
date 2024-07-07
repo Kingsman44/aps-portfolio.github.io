@@ -91,7 +91,7 @@ Algorithms:
 -  **Design:** Combine tries and inverted indexes to handle both substring and keyword searches.
 -  **Implementation:** Use tries for substring matching and auto-suggestions as the user types. Use the inverted index for broader keyword searches.
 
-<div class="codes">
+<div class="codes">Codes
     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/Trie.cpp">Trie</a>
     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/InvertedIndex.cpp">Inverted Index</a>
 </div>
@@ -126,6 +126,10 @@ Algorithms:
 2.  **Calculate Score:** For each restaurant, calculate a weighted sum score based on the assigned weights and the restaurant's performance in each factor
 3.  **Sorting the Weighted Sum Model:**
     - Using QuickSort to sort the results, and show to users
+  
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/QuickSort.cpp">Quick Sort</a>
+</div>
 
 ## 3. Assignment & Routing Optimization for Swiggy Instamart Delivery
 
@@ -165,6 +169,10 @@ Algorithms:
 
 By combining bipartite matching for assignment and VRP for routing, Swiggy can optimize the Instamart delivery operations, ensuring timely and cost-effective deliveries to customers.
 
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/VRPandBipartiteforDellivery.cpp">VRP and Bipartite Matching</a>
+</div>
+
 ## 4. Personalizing Swiggy POP Recommendations
 
 **Use Case:** Swiggy POP, a service offering single-serve, quick-checkout meals, aims to enhance the user experience by providing personalized recommendations. This involves tailoring the menu to individual preferences based on past orders, browsing history, dietary restrictions, and other relevant factors. By presenting users with options they are most likely to enjoy, Swiggy can increase order frequency, average order value, and overall user satisfaction.
@@ -192,6 +200,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 - **Time Complexity (Search):** O(k), where k is the number of food items containing the keyword.
 - **Space Complexity:** O(N*L), where N is the number of food items and L is the average length of a food item.
 
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/Trie.cpp">Trie</a>
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/InvertedIndex.cpp">Inverted Index</a>
+</div>
+
 ## 5. Finding All Restaurants Near Me Using Geospatial Data Structures
 
 **Use Case:** In the competitive food delivery market, Swiggy aims to provide a seamless and user-friendly experience by quickly displaying restaurants near the user's location. This involves utilizing geospatial data structures, such as k-d trees or quadtrees, to efficiently store and query restaurant locations. By implementing algorithms for range queries, Swiggy can instantly identify all restaurants within a specified radius of the user, enabling faster decision-making and increased convenience.
@@ -208,10 +221,10 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 
 **Algorithms:**
 
-### 1. Geospatial Data Structures:
+### 1. Geospatial Data Structures (KD-Trees):
 
 -   **Purpose:** Store and query geospatial data efficiently, such as restaurant locations.
--   **Application:** Use a geospatial data structure like a k-d tree or a quadtree to store the restaurant locations and perform range queries to find all restaurants within a given radius.
+-   **Application:** Use a geospatial data structure like a k-d tree to store the restaurant locations and perform range queries to find all restaurants within a given radius.
 -   **Time Complexity:** O(log n) for insertion and O(n) for range queries, where n is the number of restaurants.
 -   **Space Complexity:** O(n), where n is the number of restaurants.
 
@@ -230,6 +243,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 4.  **Result Filtering:** Filter the results to include only restaurants that are open and available for delivery.
 
 <img width="461" alt="image" src="https://github.com/Kingsman44/aps-portfolio.github.io/assets/58323485/2882c7bf-8a62-48bc-9e1d-5e954128d8de">
+
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/KDTree.cpp">KD Trees</a>
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a>
+</div>
 
 ## 6. Finding the Delivery Charges
 
@@ -258,6 +276,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 1.  **Construct the Road Network Graph:** Represent the road network as a weighted graph, where nodes represent intersections or points of interest, and edges represent road segments with associated weights.
 2.  **Perform Dijkstra's Algorithm:** Use Dijkstra's algorithm to find the shortest path between the user's location and the selected restaurant. The algorithm will explore the graph, keeping track of the shortest distance to each node, and eventually return the shortest path and distance.
 3.  **Provide the Fare:** Calculate fare
+
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/dijkstra.cpp">Dijkstra</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
 
 
 ## 7. Shortest Path for Multi-Parcel Delivery
@@ -317,6 +340,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
     -   Deploy the optimized routes to the delivery personnel via a mobile application.
     -   Provide real-time navigation and updates to ensure timely deliveries.
 
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/mTSP.cpp">Multiple Traveling Salesman Problem</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
+
 ## 8. Sorting and Filtering Food Items
 
 **Use Case:** Swiggy recognizes the importance of providing users with a seamless and intuitive way to navigate its extensive menu. To achieve this, the platform aims to offer robust sorting and filtering capabilities, allowing users to quickly find food items that meet their specific criteria, such as price range, cuisine type, dietary restrictions, and customer ratings. By enabling users to personalize their search, Swiggy can cater to diverse preferences and ensure that each user finds exactly what they are looking for. This not only enhances the user experience but also increases the likelihood of placing an order.
@@ -338,6 +366,10 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Time Complexity:** O(N log N)
 -   **Space Complexity:** O(N)
 
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/MergeSort.cpp">Merge Sort</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
 
 ## 9. Real-Time Order Tracking
 
@@ -367,6 +399,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 2.  **Real-Time Updates:** Continuously update the graph with real-time traffic data.
 3.  **Pathfinding:** Use the A* algorithm to find the shortest path for delivery executives.
 
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/A_star.cpp">A* Search Algorithum</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
+
 ## 10. Customer Segmentation
 
 
@@ -394,6 +431,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 1.  **Feature Extraction:** Collect data on customer behavior, preferences, and demographics.
 2.  **Clustering:** Use K-Means to segment customers into clusters.
 
+<div class="codes">Codes
+    <a href="https://github.com/aditya1601/kmeans-clustering-cpp/blob/master/kmeans.cpp">K-means Clustering</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
+
 ##  11. Data Compression in Swiggy's Infrastructure using Huffman Coding
 
 **Use Case:** As a leading food delivery platform, Swiggy handles massive amounts of data, including order details, customer information, restaurant menus, and user interactions. This data needs to be stored efficiently and transmitted quickly to ensure a seamless user experience. Huffman coding, a lossless data compression algorithm, can be employed to reduce the size of this data without compromising its integrity. By encoding frequently occurring data with shorter codes and less frequent data with longer codes, Swiggy can significantly reduce storage requirements and bandwidth usage, leading to faster data transfer speeds and improved overall performance.
@@ -407,6 +449,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 ### 1. Huffman Coding: Greedy approach, Variable-length encoding
 -   **Time Complexity:** O(n log n) for building the Huffman tree, where n is the number of symbols
 -   **Space Complexity:** O(n) for storing the Huffman tree and encoded data
+
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/huffmann.cpp">Huffman Coding</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
 
 
 ## 12.  Real-Time Order Tracking for swiggy admin and Statistics using Fenwick Trees
@@ -423,6 +470,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -    Data structure for cumulative frequency tables.
 -  **Time Complexity:** O(log n) for both updates and prefix sum queries.
 -   **Space Complexity:** O(n) for storing the tree.
+
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/FenwickTree.cpp">Fenwick Tree</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
 
 
 ## 13. Order Dispatch Optimization using Max-Heap (Priority Queue)
@@ -442,6 +494,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Application:** Store the incoming orders in a max-heap, where the priority of each order is determined by a combination of factors, such as delivery time, customer priority, and order value.
 -   **Time Complexity:** O(log n) for insertion, deletion, and retrieval of the maximum (highest priority) element, where n is the number of elements in the heap.
 -   **Space Complexity:** O(n), where n is the number of elements in the heap.
+
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/Maxheap.cpp">Max heap</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
 
 
 ## 14. Restaurant Rating and Sorting using Red-Black Trees
@@ -474,6 +531,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 3.  **Sorted Restaurant List:** Traverse the red-black tree in-order to obtain a sorted list of restaurants based on their ratings.
 4.  **Filtering and Searching:** Use the red-black tree's search functionality to efficiently filter and search for restaurants based on their ratings.
 
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RedBlackTree.cpp">Red Black Tree</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
+
 ## 15. Delivery Time Estimates using Segment Trees for Range Queries
 
 **Use Case:** Providing accurate and dynamic delivery time estimates is crucial for enhancing the customer experience on Swiggy. Customers want to know when they can expect their food to arrive, and accurate estimates can help them plan their meals and schedules accordingly. Segment trees, a versatile data structure for range queries, can be utilized to efficiently calculate and update delivery time estimates based on various factors such as restaurant preparation time, distance to the customer, traffic conditions, and delivery executive availability. By leveraging segment trees, Swiggy can provide real-time and reliable ETA updates, improving customer satisfaction and reducing anxiety associated with waiting for deliveries.
@@ -504,6 +566,10 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 3.  **Range Queries:** When a customer requests a delivery time estimate, perform a range query on the segment tree to retrieve the estimated delivery time for the selected restaurant and delivery zone.
 4.  **Continuous Monitoring:** Continuously monitor and update the delivery time estimates in the segment tree based on real-time data to ensure accurate and up-to-date information.
 
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/SegmentTree.cpp">Segment Trees</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
 
 ## 16. Priority Queue for Call Wait Time Management and Swiggy One Membership
 
@@ -521,6 +587,11 @@ By combining bipartite matching for assignment and VRP for routing, Swiggy can o
 -   **Application:** Store the incoming customer calls in a priority queue, where the priority of each call is determined by factors such as call wait time, customer priority, and Swiggy One membership status.
 -   **Time Complexity:** O(log n) for insertion, deletion, and retrieval of the maximum (highest priority) element, where n is the number of elements in the queue.
 -   **Space Complexity:** O(n), where n is the number of elements in the queue.
+
+<div class="codes">Codes
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/PriortyQueue.cpp">Priorty Queue</a>
+<!--     <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/RectangularRangeQuery.cpp">Rectangular Range Query</a> -->
+</div>
 
 ## 17. Enhancing Food Recommendations using Graph Methods
 
