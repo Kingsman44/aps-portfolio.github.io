@@ -90,6 +90,11 @@ Algorithms:
 **Approach**
 -  **Design:** Combine tries and inverted indexes to handle both substring and keyword searches.
 -  **Implementation:** Use tries for substring matching and auto-suggestions as the user types. Use the inverted index for broader keyword searches.
+
+<div class="codes">
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/Trie.cpp">Trie</a>
+    <a href="https://github.com/Kingsman44/aps-portfolio.github.io/blob/main/codes/InvertedIndex.cpp">Inverted Index</a>
+</div>
  
 ## 2. Ranked Search Result Swiggy App
 
